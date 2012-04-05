@@ -12,13 +12,13 @@ end
 # Entering text
 
 When /^I clear the screen$/ do
-  @a.type_text "HOME"
+  @a.type_line "HOME"
 end
 
 When /^I type ["'](.*)['"]$/ do |line|
-  @a.type_text(line + "\n")
+  @a.type_line(line)
 end
 
 When /^I enter the following program/ do |lines|
-  lines.hashes.each { |l|  @a.type_text l['lines']  }
+  lines.hashes.each { |l|  @a.type_line l['lines']  }
 end
