@@ -2,7 +2,7 @@ require 'appscript'
 World(Appscript)
 
 Before do
-  @a = app("Virtual ][").machines[0]
+  @apple2 = app("Virtual ][").machines[0]
 end
 
 AfterStep do |scenario|
