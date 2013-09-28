@@ -22,3 +22,9 @@ end
 When /^I enter the following program/ do |lines|
   lines.hashes.each { |l|  @apple2.type_line l['lines']  }
 end
+
+# Examining text output
+
+Then /^I should see ["'](.*)['"]$/ do |string|
+  @apple2.screen_text.content.get.should include(string)
+end

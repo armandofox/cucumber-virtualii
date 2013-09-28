@@ -6,7 +6,7 @@ Feature: enter and run a short BASIC program
 
 Background: The Apple II is booted and the BASIC interpreter is activated
 
-  Given   there is no current BASIC program
+  Given there is no current BASIC program
 
 Scenario: enter and run Hello World
 
